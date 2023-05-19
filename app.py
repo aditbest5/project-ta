@@ -40,4 +40,4 @@ def video_dataset():
 def video_feed():
     return Response(FaceRecognition.gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 if __name__=='__main__':
-    app.run()
+    app.run(debug=False, host="0.0.0.0")
